@@ -1,0 +1,281 @@
+/* ========================================
+   SMART TRAFFIC AI
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html,
+body,
+[class*="css"]{
+
+    font-family:'Poppins',sans-serif;
+}
+
+/* ========================================
+   MAIN APP
+======================================== */
+
+.stApp{
+
+    background:#050816;
+
+    color:white;
+}
+
+/* ========================================
+   HIDE STREAMLIT
+======================================== */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.block-container{
+
+    padding-top:1rem;
+
+    padding-left:2rem;
+
+    padding-right:2rem;
+}
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+[data-testid="stSidebar"]{
+
+    background:#081120;
+
+    border-right:1px solid rgba(255,255,255,0.06);
+}
+
+[data-testid="stSidebar"] *{
+
+    color:white;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.stButton > button{
+
+    width:100%;
+
+    background:#111c36;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    transition:0.3s;
+}
+
+.stButton > button:hover{
+
+    background:linear-gradient(
+        90deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    transform:translateX(5px);
+
+    color:white;
+}
+
+/* ========================================
+   TITLES
+======================================== */
+
+h1,h2,h3,h4,h5,h6{
+
+    color:white;
+}
+
+p{
+
+    color:#cbd5e1;
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card{
+
+    background:#0b132b;
+
+    padding:24px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+/* ========================================
+   MAP CARD
+======================================== */
+
+.map-card{
+
+    background:#0b132b;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+/* ========================================
+   STATS CARD
+======================================== */
+
+.stats-card{
+
+    background:#0b132b;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+/* ========================================
+   CHAT UI
+======================================== */
+
+[data-testid="stChatMessage"]{
+
+    border-radius:18px;
+
+    padding:12px;
+}
+
+/* USER CHAT */
+
+[data-testid="stChatMessage"][aria-label="user"]{
+
+    background:#2563eb;
+
+    margin-left:120px;
+
+    color:white;
+
+    border-radius:18px;
+}
+
+/* AI CHAT */
+
+[data-testid="stChatMessage"][aria-label="assistant"]{
+
+    background:#111827;
+
+    margin-right:120px;
+
+    color:white;
+
+    border-radius:18px;
+}
+
+/* ========================================
+   INPUT
+======================================== */
+
+.stTextInput input{
+
+    background:#111827 !important;
+
+    color:white !important;
+
+    border-radius:14px !important;
+
+    border:1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* ========================================
+   CHAT INPUT
+======================================== */
+
+[data-testid="stChatInput"]{
+
+    background:#0b132b;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+/* ========================================
+   SELECT BOX
+======================================== */
+
+.stSelectbox div[data-baseweb="select"]{
+
+    background:#111827;
+
+    color:white;
+
+    border-radius:14px;
+}
+
+/* ========================================
+   SUCCESS BOX
+======================================== */
+
+.stSuccess{
+
+    border-radius:16px;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b132b;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:10px;
+}
